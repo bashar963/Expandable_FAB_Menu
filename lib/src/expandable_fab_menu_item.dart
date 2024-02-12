@@ -14,7 +14,7 @@ class ExpandableFabMenuItem {
   ExpandableFabMenuItem(
       {required this.child,
       required this.title,
-      required this.subtitle,
+       this.subtitle,
       required this.backgroundColor,
       this.elevation,
       required this.onTap,
