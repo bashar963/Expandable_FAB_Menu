@@ -242,8 +242,10 @@ class _ExpandableFabMenuState extends State<ExpandableFabMenu>
               visible: _open,
               child: SizedBox(
                  width: MediaQuery.of(context).size.width * .5,
+                  height: MediaQuery.of(context).size.height  ,
                 child: ListView(
                   children: List.from(fabChildren),
+                   shrinkWrap: true,
                   reverse: true,
                 ),
               ),
