@@ -7,7 +7,7 @@ class ExpandableFabMenuItem {
   final double? elevation;
   final VoidCallback onTap;
   final String title;
-  final String subtitle;
+  final String? subtitle;
   final Color? titleColor;
   final Color? subTitleColor;
 
