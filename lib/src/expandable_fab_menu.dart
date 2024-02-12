@@ -240,7 +240,8 @@ class _ExpandableFabMenuState extends State<ExpandableFabMenu>
             const SizedBox(height: kToolbarHeight + 40),
             Visibility(
               visible: _open,
-              child: Expanded(
+              child: SizedBox(
+                 width: MediaQuery.of(context).size.width * .5,
                 child: ListView(
                   children: List.from(fabChildren),
                   reverse: true,
