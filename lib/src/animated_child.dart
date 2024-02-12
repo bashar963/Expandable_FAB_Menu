@@ -56,8 +56,8 @@ class AnimatedChild extends AnimatedWidget {
                       color: (titleColor == null) ? Colors.black : titleColor,
                       fontSize: 20.0),
                 ),
-                const SizedBox(height: 4.0),
-                Text(
+              if(subtitle!=null)  const SizedBox(height: 4.0),
+             if(subtitle!=null)   Text(
                   subtitle ?? "",
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
