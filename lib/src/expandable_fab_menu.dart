@@ -231,7 +231,7 @@ class _ExpandableFabMenuState extends State<ExpandableFabMenu>
       right: widget.marginRight,
       child: Container(
         alignment: Alignment.bottomCenter,
-        width: MediaQuery.of(context).size.width,
+        width: MediaQuery.of(context).size.width * .5,
         height: MediaQuery.of(context).size.height,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
@@ -240,9 +240,7 @@ class _ExpandableFabMenuState extends State<ExpandableFabMenu>
             const SizedBox(height: kToolbarHeight + 40),
             Visibility(
               visible: _open,
-              child: SizedBox(
-                 width: MediaQuery.of(context).size.width * .5,
-                  height: MediaQuery.of(context).size.height  ,
+              child: Expanded(
                 child: ListView(
                   children: List.from(fabChildren),
                    shrinkWrap: true,
